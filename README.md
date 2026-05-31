@@ -65,52 +65,6 @@ streamlit run dashboard.py
 
 ---
 
-## Cara Deploy ke Streamlit Cloud
-
-### Langkah-langkah:
-
-#### 1. Push ke GitHub
-```bash
-git init
-git add .
-git commit -m "Final submission bike sharing analysis"
-
-# Buat repository di GitHub, lalu push
-git remote add origin https://github.com/username/nama-repo.git
-git branch -M main
-git push -u origin main
-```
-
-#### 2. Buka Streamlit Cloud
-- Buka https://streamlit.io/cloud
-- Login dengan akun GitHub
-- Klik "New app"
-
-#### 3. Konfigurasi App
-| Field | Value |
-|-------|-------|
-| Repository | Pilih repo GitHub yang telah di-push |
-| Branch | main |
-| Main file path | submission/dashboard.py |
-
-#### 4. Advanced Settings
-- Python version: 3.11 atau 3.12
-- Requirements file: submission/requirements.txt
-
-#### 5. Klik "Deploy"
-
-Proses deploy memakan waktu 2-5 menit. Setelah selesai, Anda akan mendapatkan URL publik seperti:
-```
-https://username-nama-repo-submission-dashboard.streamlit.app
-```
-
-### Catatan Penting
-- Pastikan path file di dashboard.py menggunakan path relatif (data/day.csv)
-- File data sudah termasuk dalam repository (ukuran kecil)
-- Streamlit Cloud akan menginstall dependencies dari requirements.txt secara otomatis
-
----
-
 ## Dataset
 
 **Sumber**: Capital Bikeshare System Data (http://capitalbikeshare.com/system-data)
