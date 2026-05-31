@@ -69,7 +69,7 @@ streamlit run dashboard/dashboard.py
 ### 5. Akses Dashboard Online
 Dashboard juga sudah dideploy ke Streamlit Cloud dan bisa diakses di:
 ```
-https://submission-final.streamlit.app/
+https://submission-tempa.streamlit.app/
 ```
 
 ---
