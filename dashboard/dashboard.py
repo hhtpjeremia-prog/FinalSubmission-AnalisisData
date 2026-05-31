@@ -22,7 +22,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     base_path = os.path.dirname(os.path.abspath(__file__))
-    data_path = os.path.join(base_path, 'data')
+    data_path = os.path.join(base_path, '..', 'data')
 
     day_df = pd.read_csv(os.path.join(data_path, 'day.csv'))
     hour_df = pd.read_csv(os.path.join(data_path, 'hour.csv'))
