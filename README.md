@@ -10,13 +10,16 @@ Proyek ini menganalisis dataset Bike Sharing dari Capital Bikeshare, Washington 
 
 ```
 submission/
-├── Proyek_Analisis_Data.ipynb   # Notebook analisis data (template)
-├── dashboard.py                  # Dashboard Streamlit interaktif
-├── requirements.txt              # Dependencies Python
-├── README.md                     # Dokumentasi proyek
-└── data/
-    ├── day.csv                   # Data harian (731 records)
-    └── hour.csv                  # Data per jam (17.379 records)
+├───dashboard/
+│   ├───dashboard.py              # Dashboard Streamlit interaktif
+│   └───main_data.csv             # Data utama hasil cleansing
+├───data/
+│   ├───day.csv                   # Data harian (731 records)
+│   └───hour.csv                  # Data per jam (17.379 records)
+├───Proyek_Analisis_Data.ipynb    # Notebook analisis data
+├───README.md                     # Dokumentasi proyek
+├───requirements.txt              # Dependencies Python
+└───url.txt                       # URL dashboard yang sudah dideploy
 ```
 
 ---
@@ -60,7 +63,13 @@ jupyter notebook Proyek_Analisis_Data.ipynb
 
 ### 4. Jalankan Dashboard
 ```bash
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
+```
+
+### 5. Akses Dashboard Online
+Dashboard juga sudah dideploy ke Streamlit Cloud dan bisa diakses di:
+```
+https://submission-final.streamlit.app/
 ```
 
 ---
